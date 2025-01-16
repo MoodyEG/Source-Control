@@ -1,0 +1,23 @@
+1-Make a project deployment.
+2-what is pull request and request & differrent bettween them?
+    A pull request is when an updated version on the platform like github is requested to be merged to the main repo
+    A request.... is a request in general xd
+3-Make fork from your project and use it from anthor account 
+4-What is the command to delete the branch "new-email"
+    git branch -d new-email
+    git branch -D new-email
+5-What is the command to push the current repository to the remote origin?
+    git push origin main
+6-what is git Rebase and how to use it ?
+    Rebasing is the process of moving or combining a sequence of commits to a new base commit.
+    git rebase
+7-What is the command to get all the change history of the remote repository "origin"?
+    git log origin
+8-What is the command to show the differences between the current branch and the branch "new-email"?
+    git diff new-email
+9-what is tags and Make five tags and release two of them?
+    Tags are labels that point to a specific commit, and usually marks version of the project.
+
+
+Bonus :
+Make SSh to your repo.

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <style>
+      .hover-effect .card:hover {
+        transform: scale(1.05);
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body style="background-color: #697565">
+    <!-- * Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: #3c3d37"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #ecdfcc">Shoppy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #ecdfcc"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: #ecdfcc"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" style="background-color: #697565">
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >CPUs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >Motherboards</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >GPUs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >RAM</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >Storage</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >Cases</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >Cooling</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >Power Supplies</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #ecdfcc" href="#"
+                    >Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ecdfcc">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ecdfcc"
+                >Top Sellers</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="background-color: #ecdfcc"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="btn btn-outline-light ms-2" href="#">
+              <i class="bi bi-person"></i>
+            </button>
+            <a class="btn btn-outline-light ms-2" href="#">
+              <i class="bi bi-sun"></i>
+            </a>
+            <button class="btn btn-outline-light ms-2" href="#">
+              <i class="bi bi-cart-fill"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- * Slider -->
+    <div class="container-fluid" style="background-color: #697565">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  style="height: 500px; width: 100%"
+                  src="./Images/Banner-1.jpg"
+                  class="d-block object-fit-contain w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  style="height: 500px; width: 100%"
+                  src="./Images/Banner-2.webp"
+                  class="d-block object-fit-contain w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  style="height: 500px; width: 100%"
+                  src="./Images/Banner-3.jpg"
+                  class="d-block object-fit-contain w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  style="height: 500px; width: 100%"
+                  src="./Images/Banner-4.jpg"
+                  class="d-block object-fit-contain w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  style="height: 500px; width: 100%"
+                  src="./Images/banner-5.webp"
+                  class="d-block object-fit-contain w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * Offers -->
+    <div class="hover-effect container-fluid mt-3">
+      <h2 class="text-center mt-3 display-5 fw-bold" style="color: #ecdfcc">
+        Offers
+      </h2>
+
+      <div class="row g-2">
+        <div class="col-md-4">
+          <div
+            class="card"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body text-white">
+              <h5 class="card-title">PC Bundle</h5>
+              <p class="card-text">
+                <span class="text-decoration-line-through">$1000</span>
+                <span class="fw-bold">$800</span>
+              </p>
+            </div>
+            <img
+              src="./Images/Offer-Bundle.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body text-white">
+              <h5 class="card-title">PC Case</h5>
+              <p class="card-text">
+                <span class="text-decoration-line-through">$100</span>
+                <span class="fw-bold">$80</span>
+              </p>
+            </div>
+            <img
+              src="./Images/Offer-Case.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body text-white">
+              <h5 class="card-title">Ram 32GB</h5>
+              <p class="card-text">
+                <span class="text-decoration-line-through">$80</span>
+                <span class="fw-bold">$60</span>
+              </p>
+            </div>
+            <img
+              src="./Images/Offer-Ram.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * Popular categories -->
+    <div class="hover-effect container-fluid mt-5">
+      <h2 class="text-center mt-3 display-5 fw-bold" style="color: #ecdfcc">
+        Categories
+      </h2>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4">
+          <div
+            class="card text-white"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Cases</h5>
+            </div>
+            <img
+              src="./Images/Cat-Case.png"
+              class="card-img"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div
+            class="card text-white"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Storage Drives</h5>
+            </div>
+            <img
+              src="./Images/Cat-Drive.png"
+              class="card-img"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div
+            class="card text-white"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Power Supplies</h5>
+            </div>
+            <img
+              src="./Images/Cat-PS.png"
+              class="card-img"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <!-- * To only show the first 3 category for small screens -->
+        <div class="col-sm-6 col-md-4 d-none d-sm-block">
+          <div
+            class="card text-white"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Accessories</h5>
+            </div>
+            <img
+              src="./Images/Cat-Mouse.png"
+              class="card-img"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-none d-sm-block">
+          <div
+            class="card text-white"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Ram</h5>
+            </div>
+            <img
+              src="./Images/Cat-Ram.png"
+              class="card-img"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-none d-sm-block">
+          <div
+            class="card text-white"
+            style="background-color: #181c14; transition: transform 0.3s"
+          >
+            <div class="card-body">
+              <h5 class="card-title">CPUs</h5>
+            </div>
+            <img
+              src="./Images/Cat-Processor.png"
+              class="card-img"
+              alt="..."
+              style="height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * Reviews -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h2>Reviews</h2>
+          <div class="row g-1">
+            <div class="col-sm-12 col-lg-6">
+              <div class="card" style="background-color: #94a38f">
+                <div class="card-header">
+                  <i class="bi bi-person-circle avatar"></i>
+                  <span class="reviewer-name fw-bold">Customer Name</span>
+                  <span class="reviewer-product">on Product Name</span>
+                  <div style="float: right">
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-half" style="color: #181c14"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="review-text">
+                    Some review text goes here. Some review text goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="card" style="background-color: #94a38f">
+                <div class="card-header">
+                  <i class="bi bi-person-circle avatar"></i>
+                  <span class="reviewer-name fw-bold">Customer Name</span>
+                  <span class="reviewer-product">on Product Name</span>
+                  <div style="float: right">
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="review-text">
+                    Some review text goes here. Some review text goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="card" style="background-color: #94a38f">
+                <div class="card-header">
+                  <i class="bi bi-person-circle avatar"></i>
+                  <span class="reviewer-name fw-bold">Customer Name</span>
+                  <span class="reviewer-product">on Product Name</span>
+                  <div style="float: right">
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="review-text">
+                    Some review text goes here. Some review text goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="card" style="background-color: #94a38f">
+                <div class="card-header">
+                  <i class="bi bi-person-circle avatar"></i>
+                  <span class="reviewer-name fw-bold">Customer Name</span>
+                  <span class="reviewer-product">on Product Name</span>
+                  <div style="float: right">
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-half" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="review-text">
+                    Some review text goes here. Some review text goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="card" style="background-color: #94a38f">
+                <div class="card-header">
+                  <i class="bi bi-person-circle avatar"></i>
+                  <span class="reviewer-name fw-bold">Customer Name</span>
+                  <span class="reviewer-product">on Product Name</span>
+                  <div style="float: right">
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="review-text">
+                    Some review text goes here. Some review text goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="card" style="background-color: #94a38f">
+                <div class="card-header">
+                  <i class="bi bi-person-circle avatar"></i>
+                  <span class="reviewer-name fw-bold">Customer Name</span>
+                  <span class="reviewer-product">on Product Name</span>
+                  <div style="float: right">
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star-fill" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                    <i class="bi bi-star" style="color: #181c14"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="review-text">
+                    Some review text goes here. Some review text goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * Newsletter -->
+    <div class="container-fluid mt-5">
+      <div
+        class="container-fluid px-4 pt-2 rounded-4"
+        style="background-color: #3c3d37"
+      >
+        <div class="row d-flex align-items-center">
+          <div class="col-6 text-start" style="color: #ecdfcc">
+            <h2>Newsletter</h2>
+            <p>
+              Sign up for our newsletter to get the latest offers and trends
+            </p>
+          </div>
+          <div class="col-6 text-center">
+            <form
+              class="d-flex flex-column flex-lg-row justify-content-center col-12"
+            >
+              <input
+                class="form-control me-2"
+                type="email"
+                placeholder="email@example.com"
+                aria-label="Email"
+                style="background-color: #ecdfcc"
+              />
+              <button
+                class="btn btn-outline-dark"
+                type="submit"
+                style="color: #ecdfcc"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * Products -->
+    <div class="container-fluid mt-5">
+      <h2 class="text-center mt-3 display-5 fw-bold" style="color: #ecdfcc">
+        Products
+      </h2>
+      <div
+        class="container-fluid px-4 rounded-4"
+        style="background-color: #181c14"
+      >
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-md-4">
+            <h2 style="color: #ecdfcc">Cases</h2>
+            <div
+              id="carouselCategory1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./Images/Case-1.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Case 1</h3>
+                    <!-- Made by Moody -->
+                    <p>Price: $120</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Case-2.webp"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Case 2</h3>
+                    <p>Price: $110</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Case-3.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Case 3</h3>
+                    <p>Price: $105</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Case-4.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Case 4</h3>
+                    <p>Price: $89</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselCategory1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselCategory1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h2 style="color: #ecdfcc">Ram</h2>
+            <div
+              id="carouselCategory2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./Images/Ram-1.avif"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Ram 1</h3>
+                    <p>Price: $59.99</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Ram-2.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Ram 2</h3>
+                    <!-- Made by Mohey -->
+                    <p>Price: $29.99</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Ram-3.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>Ram 3</h3>
+                    <p>Price: $59.99</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselCategory2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselCategory2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h2 style="color: #ecdfcc">Storage Drives</h2>
+            <div
+              id="carouselCategory3"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./Images/Drive-1.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>SSD 1</h3>
+                    <p>Price: $29.99</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Drive-2.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>HDD 2</h3>
+                    <p>Price: $60</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Images/Drive-3.png"
+                    class="d-block w-100 object-fit-contain"
+                    alt="..."
+                    style="height: 300px"
+                  />
+                  <div style="color: #ecdfcc" class="mt-2">
+                    <h3>HDD 3</h3>
+                    <p>Price: $22.99</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselCategory3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselCategory3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * Footer -->
+    <div class="container-fluid px-4 mt-5" style="background-color: #1a1a19">
+      <div class="row g-4">
+        <div class="col-4">
+          <h5 style="color: #ecdfcc">Something</h5>
+          <!-- is white by my choice -->
+          <ul class="text-white list-unstyled">
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5 style="color: #ecdfcc">Something</h5>
+          <!-- is white by my choice -->
+          <ul class="text-white list-unstyled">
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5 style="color: #ecdfcc">Something</h5>
+          <!-- is white by my choice -->
+          <ul class="text-white list-unstyled">
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+            <li>Some text here</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
